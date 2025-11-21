@@ -8,10 +8,29 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
+  --color-bg-light: #fff;
+  --color-bg-dark: #161722;
+  --color-note-dark: #24273c;
+  --color-note-light: #fff;
+  --color-hover-dark: #484a69;
+  --color-hover-light: #000;
+  --color-text-light: #fff;
+  --color-text-dark: #cacce7;
+
+  --color-note: var(--color-note-light);
+  --color-hover: var(--color-hover-light);
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.dark {
+  --color-bg: var(--color-bg-dark);
+  --color-note: var(--color-note-dark);
+  --color-hover: var(--color-hover-dark);
+  --color-text: var(--color-text-dark);
 }
 
 @media (prefers-color-scheme: light) {
