@@ -37,7 +37,7 @@ function NoteBoard({ note, setAllNotes }: Props) {
   };
 
   return (
-    <div className="border rounded h-[80%] flex justify-between flex-col pt-6 pb-6 w-1/3  mx-auto p-4 bg-[color:var(--color-note)] transition-all duration-500 ease-in-out">
+    <div className="shadow-sm rounded transform -translate-y-6 h-[80%] flex justify-between flex-col pt-6 pb-6 w-[90%] lg:w-1/3  mx-auto p-4 bg-[color:var(--color-note)] transition-all duration-500 ease-in-out">
       <div className="space-y-6 overflow-scroll">
         {filteredNotes.map((n) => (
           <div className="flex flex-row justify-between items-center">
@@ -69,7 +69,7 @@ function NoteBoard({ note, setAllNotes }: Props) {
                 }
                 `}
               >
-                {n.title}
+                {n.title.length > 36 ? n.title.slice(0, 36) + "..." : n.title}
               </span>
             </div>
 

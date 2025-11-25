@@ -26,7 +26,7 @@ function Input({ setAllNotes }: Props) {
   };
 
   return (
-    <div className="bg-[color:var(--color-note)] flex flex-row items-center p-3 rounded transition-all duration-500 ease-in-out">
+    <div className="bg-[color:var(--color-note)] flex flex-row items-center p-3   rounded transition-all duration-500 ease-in-out">
       <div className="rounded-full border w-6 h-6  border-[#494b6ab6]"></div>
       <input
         type="text"

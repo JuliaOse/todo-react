@@ -30,14 +30,14 @@ function App() {
   return (
     <>
       <section
-        className=" bg-cover bg-center h-[30vh] flex flex-col items-center justify-center transition-all duration-500 ease-in-out"
+        className=" bg-cover bg-center  h-[30vh] flex flex-col items-center justify-center transition-all duration-500 ease-in-out"
         style={{
           backgroundImage: `url(${isDarkMode ? DarkBG : LightBG})`,
           // display: "flex",
           // flex: "row"
         }}
       >
-        <div className=" flex flex-col w-[35%] gap-2">
+        <div className=" flex flex-col w-[90%] lg:w-[34%] gap-2">
           <div className="flex flex-row items-center justify-between   ">
             <h1 className="text-4xl font-extrabold  text-[color:var(--color-text)] transition-all duration-500 ease-in-out">
               TODO
@@ -56,13 +56,13 @@ function App() {
             />
           </div>
           {/* </button> */}
-          <div className=" w-full">
+          <div className=" ">
             <Input setAllNotes={setAllNotes} />
           </div>
         </div>
       </section>
-      <section className="bg-[color:var(--color-bg)]  h-[70vh] transition-all duration-500 ease-in-out">
-        <NoteBoard note={allNotes} setAllNotes={setAllNotes}/>
+      <section className="bg-[color:var(--color-bg)] min-w-[350px]  h-[70vh] transition-all duration-500 ease-in-out relative">
+        <NoteBoard note={allNotes} setAllNotes={setAllNotes} />
       </section>
     </>
   );
