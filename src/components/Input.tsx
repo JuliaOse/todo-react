@@ -15,7 +15,7 @@ function Input({ setAllNotes }: Props) {
     id: "",
   });
   console.log(note, "new note");
-  const handleSaveNote = (e) => {
+  const handleSaveNote = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       console.log("enter pressed, saving note");
 
